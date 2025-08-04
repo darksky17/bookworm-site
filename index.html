@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookWorm - Social Reading Platform</title>
+    <meta name="description" content="Join BookWorm, the social platform for book lovers. Share reviews, discover new books, and connect with fellow readers.">
+    
+
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            padding: 60px 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .description {
+            font-size: 1rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            opacity: 0.8;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76,175,80,0.3);
+        }
+        
+        .download-btn:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76,175,80,0.4);
+        }
+        
+        .app-opening {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .features {
+            margin-top: 40px;
+            text-align: left;
+        }
+        
+        .feature {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .feature::before {
+            content: "📚";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        @media (max-width: 600px) {
+            .container { 
+                margin: 20px; 
+                padding: 40px 30px; 
+            }
+            h1 { font-size: 2rem; }
+            .logo { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">📚</div>
+        <h1>BookWorm</h1>
+        <p class="subtitle">Social Reading Platform</p>
+        <p class="description">
+            Join the community of book lovers! Share reviews, discover new books, 
+            and connect with fellow readers from around the world.
+        </p>
+        
+        <div id="app-status" class="app-opening" style="display: none;">
+            <div class="loading"></div>
+            <span>Opening BookWorm app...</span>
+        </div>
+        
+        <a href="https://play.google.com/store/apps/details?id=com.bookworm.demo" 
+           class="download-btn" id="download-btn">
+            📱 Get BookWorm App
+        </a>
+        
+        <div class="features">
+            <div class="feature">Share and discover book reviews</div>
+            <div class="feature">Connect with fellow readers</div>
+            <div class="feature">Track your reading progress</div>
+            <div class="feature">Join book discussions</div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
