@@ -5,7 +5,6 @@
       "namespace": "android_app",
       "package_name": "com.bookworm.demo",
       "sha256_cert_fingerprints": [
-        // Supports multiple fingerprints for different apps and keys
         "48:9F:2D:55:E4:04:22:F0:DE:04:DD:59:59:7B:BC:2E:86:5D:77:E7:EC:EA:34:D2:B6:EF:C7:9D:4B:92:DE:F5"
       ]
     }
