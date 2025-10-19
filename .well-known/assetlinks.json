@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.bookworm.demo",
       "sha256_cert_fingerprints": [
-        "48:9F:2D:55:E4:04:22:F0:DE:04:DD:59:59:7B:BC:2E:86:5D:77:E7:EC:EA:34:D2:B6:EF:C7:9D:4B:92:DE:F5"
+        "48:9F:2D:55:E4:04:22:F0:DE:04:DD:59:59:7B:BC:2E:86:5D:77:E7:EC:EA:34:D2:B6:EF:C7:9D:4B:92:DE:F5",
+        "2A:A9:60:BD:0A:F1:B9:39:91:0B:20:BC:90:53:6B:D6:EC:00:EE:5D:7F:07:0D:9B:62:5B:5B:55:6B:9A:31:18"
       ]
     }
   }
